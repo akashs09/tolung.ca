@@ -1,0 +1,232 @@
+/*****************************************************************************
+  showing-akash
+******************************************************************************/
+
+
+@import '../../bower_components/bourbon/app/assets/stylesheets/_bourbon.scss';
+@import '../../bower_components/neat/app/assets/stylesheets/_neat.scss';
+
+
+
+
+
+/*****************************************************************************
+  Base Styles
+******************************************************************************/
+
+.header-section {
+  width: 100%;
+  height: 100px;
+  background-color: #0378A3;
+  padding: 2% 0% 2% 2%;
+}
+
+#top-bg {
+  display: block;
+  position: relative;
+  content: '';
+  background-image: url('assets/Yonge-Street-and-Davisville-Avenue.jpg');
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  //position: absolute;
+  z-index: 3;
+}
+
+.contact-info {
+  float: right;
+  margin-top: -20px;
+  background:rgba(255,255,255,0.5);
+  padding:15px 15px 0px 15px;
+  border-radius:20px;
+  margin-right:10px;
+  }
+
+.mobile-header-call {
+  float: right;
+  margin-top: -25px;
+  margin-right: 5%;
+
+}
+.c-contact {
+  color: black;
+  float: right;
+  font-weight: 600;
+  padding-bottom: 15px;
+  font-size: 16px;
+
+}
+.cnt-img{
+    float:left;
+    height:20px;
+    margin:0 0 0 5px;
+    width:20px;
+}
+h1 {
+  margin: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+#logo {
+  color: white;
+}
+
+.carousel-inner > .item > img {
+  margin: 0 auto;
+    //width: 1024px;
+    //height: 500px;
+}
+#carousel-example-generic {
+  margin-bottom: 7%
+
+}
+
+#nav-links a:hover {
+  text-decoration: underline;
+}
+
+#nav-links a:visited {
+
+}
+
+#article-header {
+  text-decoration: underline;
+  padding-bottom: 2%;
+}
+
+#referral-content {
+  font-size: 0.9em;
+}
+.col-sm-2 {
+  border-style: dashed;
+  border-width: 2px;
+  margin-bottom: 50px;
+  border-spacing: 2px;
+  border-collapse: separate;
+}
+
+/**************************** Contact Us ***********************************/
+
+#map-outer {
+  height: 440px;
+  padding: 20px;
+  border: 2px solid #CCC;
+  margin-bottom: 20px;
+  background-color:#FFF
+}
+
+#map {
+  width: 500px;
+  height: 400px;
+  background-color: #CCC;
+}
+
+/****************************** Footer Styling ******************************/
+
+
+.footer-distributed{
+  background-color: #0378A3;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  min-width: 100%;
+  text-align: left;
+  font: normal 16px sans-serif;
+
+  padding: 25px 90px;
+
+  margin-top: 8px;
+}
+
+.footer-distributed .footer-left p{
+  color:  #8f9296;
+  font-size: 14px;
+  margin: 0;
+}
+
+/* Footer links */
+
+.footer-distributed p.footer-links{
+  font-size:18px;
+  font-weight: bold;
+  color:  #ffffff;
+  margin: 0 0 10px;
+  padding: 0;
+}
+
+.footer-distributed p.footer-links a{
+  display:inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color:  inherit;
+}
+
+.footer-distributed .footer-right{
+  float: right;
+  margin-top: 6px;
+  max-width: 280px;
+}
+
+.footer-distributed .footer-right a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background-color: #33383b;
+  border-radius: 2px;
+
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+
+  margin-left: 3px;
+}
+/*****************************************************************************
+  Layout Styles
+******************************************************************************/
+@media screen and (max-width: 660px) {
+  .contact-info {
+    display: none;
+  }
+  .mobile-header-call {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 660px) {
+  .mobile-header-call {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-right{
+    text-align: center;
+  }
+
+  .footer-distributed .footer-right{
+    float: none;
+    margin: 0 auto 20px;
+  }
+
+  .footer-distributed .footer-left p.footer-links{
+    line-height: 1.8;
+  }
+}
+
+@media all and (max-width: 991px) {
+  #map-outer  { height: 650px }
+}
+
+
+
+
+/*****************************************************************************
+  Module Styles
+******************************************************************************/
